@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getPosts } from "./API"
+import { getPosts, getRandomUsers } from "./API"
 import PostCard from "./compoments/PostCard";
 import './App.css'
 
@@ -13,6 +13,13 @@ function App() {
     ;
 
   }, []);
+
+
+  //2nd Api Random user Api Functionally
+
+  useEffect(() =>{
+    getRandomUsers().then((users) => console.log(users));
+  })
 
   return (
     <div className="App">
