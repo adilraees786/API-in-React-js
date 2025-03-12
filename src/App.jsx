@@ -24,20 +24,18 @@ function App() {
     getRandomUsers().then((users) => setuserData(users.results[0]));
   })
 
-  console.log("===>UserData", userData);
-  
+ 
+  const refresh
 
   return (
     <div className="App">
 {/* Random Users */}
-<UserCard data={userData}/>
 
-
-
-
-
-
+{
+  userData &&  <UserCard data={userData}/>
+  }
 {/* End Function of random Users */}
+
       {
        data ? data.map(e => <PostCard id={e.id} title={e.title} body={e.body}/>) : <p className="no-data"> No Data</p>
   }

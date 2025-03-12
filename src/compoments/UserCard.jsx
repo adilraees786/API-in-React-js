@@ -1,11 +1,13 @@
 import React from 'react'
 
-const UserCard = () => {
+const UserCard = (props) => {
+    console.log("====> Props Data", props.data);
+    
   return (
     <div>
-        <h2>Unknow</h2>
-        <p>+92383847</p>
-   <p>User Address</p>
+        <h3>{props.data.name.first}</h3>
+        <p>{props.data.phone}</p>
+   <p>{props.data.location.city}, {props.data.location.state}</p>
 
     </div>
   )
