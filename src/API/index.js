@@ -8,7 +8,7 @@ export  const getPosts = async () => {
 
 
 
-//2nd Api Random Ursers
+//1nd Api Random Ursers
 
 export const getRandomUsers = async() => {
 

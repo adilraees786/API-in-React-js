@@ -18,10 +18,10 @@ function App() {
   }, []);
 
 
-  //2nd Api Random user Api Functionally
+  //2nd Api Random users Functionally
 
   useEffect(() =>{
-    getRandomUsers().then((users) => setuserData(users));
+    getRandomUsers().then((users) => setuserData(users.results[0]));
   })
 
   console.log("===>UserData", userData);
