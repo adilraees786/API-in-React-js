@@ -25,7 +25,9 @@ function App() {
   })
 
  
-  const refresh
+  const refresh = () => {
+    getRandomUsers().then((users) => setuserData(users.results[0]));
+  }
 
   return (
     <div className="App">
@@ -34,6 +36,8 @@ function App() {
 {
   userData &&  <UserCard data={userData}/>
   }
+ {/* <button onClick={refresh}>Refresh User</button> */}
+
 {/* End Function of random Users */}
 
       {
