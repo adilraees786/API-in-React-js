@@ -5,3 +5,16 @@ export  const getPosts = async () => {
     
     return  await response.json();
 }
+
+
+
+//2nd Api Random Ursers
+
+export const getRandomUsers = async() => {
+
+    const response = await fetch("https://randomuser.me/api/", {
+        method: "GET",
+    })
+   
+
+}
