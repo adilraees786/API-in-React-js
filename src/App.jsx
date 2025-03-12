@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {
-       data ? data.map(e => <PostCard id={e.id} title={e.title} body={e.body}/>) : <p> No Data</p>
+       data ? data.map(e => <PostCard id={e.id} title={e.title} body={e.body}/>) : <p className="no-data"> No Data</p>
   }
     </div>
   )
