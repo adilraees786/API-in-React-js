@@ -18,7 +18,7 @@ function App() {
   }, []);
 
 
-  //2nd Api Random users Functionally
+  //1st Api Random users Functionally
 
   useEffect(() =>{
     getRandomUsers().then((users) => setuserData(users.results[0]));
@@ -41,7 +41,8 @@ function App() {
 {/* End Function of random Users */}
 
       {
-       data ? data.map(e => <PostCard id={e.id} title={e.title} body={e.body}/>) : <p className="no-data"> No Data</p>
+       data ? data.map(e => <PostCard id={e.id} title={e.title} body={e.body}/>) :
+        <p className="no-data"> No Data</p>
   }
     </div>
   )
