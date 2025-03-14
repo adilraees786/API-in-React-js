@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() =>{
     getRandomUsers().then((users) => setuserData(users.results[0]));
-  })
+  },[]);
 
  
   const refresh = () => {
