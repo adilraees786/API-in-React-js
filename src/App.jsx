@@ -12,10 +12,7 @@ function App() {
   const [userData, setuserData] = useState(null);
 
   useEffect(() => {
-    getPosts().then((posts) => setdata(posts));
-    ;
-
-  }, []);
+    getPosts().then((posts) => setdata(posts));}, []);
 
 
   //1st Api Random users Functionally
