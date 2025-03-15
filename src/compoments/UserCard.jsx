@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const UserCard = (props) => {
-    console.log("====> Props Data", props.data);
+
     
   return (
     <div>
