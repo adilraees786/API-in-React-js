@@ -14,8 +14,12 @@ const UserCard = (props) => {
         <p>{props.data.email}</p>
    <p>{props.data.location.city}, {props.data.location.state}</p>
 
+   
+
 
     </div>
+
+  
   )
 }
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getPosts, getRandomUsers } from "./API"
+import { getPosts, getRandomUsers} from "./API"
 import PostCard from "./compoments/PostCard";
 import UserCard from "./compoments/UserCard";
 import './App.css'
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Api Calling</h1>
+      {/* <h1>Api Calling</h1> */}
 {/* Random Users */}
 
 {
